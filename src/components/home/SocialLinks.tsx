@@ -1,6 +1,7 @@
 "use client"
 
 import { socialLinks } from '@/config/infoConfig'
+import { ui } from '@/config/ui'
 import { utm_source } from '@/config/siteConfig'
 import Link from 'next/link'
 import { CustomIcon } from '@/components/shared/CustomIcon'
@@ -17,7 +18,7 @@ export default function SocialLinks({ className }: { className?: string }) {
                     href={`${link.href}?utm_source=${utm_source}`}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label={link.ariaLabel ?? `Follow on ${link.name}`}
+                    aria-label={link.ariaLabel ?? `${ui.followOn} ${link.name}`}
                     title={link.handle ? `@${link.handle}` : link.name}
                     className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-accent hover:text-accent-foreground"
                   >
