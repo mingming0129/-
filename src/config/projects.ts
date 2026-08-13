@@ -14,82 +14,63 @@ export type ActivityItemType = {
   link?: string
 }
 
-// Awards
-export const awardsHeadLine = "Awards & Honors"
-export const awardsIntro = "Recognition for academic and professional achievements."
+// Currently Learning (shown in awards section)
+export const awardsHeadLine = 'Currently Learning'
+export const awardsIntro = 'Computer science courses this year at SCLS.'
 
 export const awards: Array<ActivityItemType> = [
   {
-    name: 'Outstanding Teacher Award',
-    description: '',
-    date: '2024',
-    location: 'SCLS, Shanghai',
+    name: 'CSA',
+    description: 'Computer Science A — still exploring, no standout project yet.',
+    date: 'This semester',
+    location: 'SCLS',
   },
   {
-    name: 'Zhui Ying Award',
-    description: '',
-    date: '2023',
-    location: 'Qingpu, Shanghai',
+    name: 'CSP',
+    description: 'Computer Science Principles.',
+    date: 'This semester',
+    location: 'SCLS',
   },
 ]
 
-// Research & Projects
-export const projectHeadLine = "Research & Projects"
-export const projectIntro = "Academic research and technical projects I've worked on."
+// Projects
+export const projectHeadLine = 'Projects'
+export const projectIntro = "Nothing fancy yet — my first real build is this website."
 
 export const projects: Array<ProjectItemType> = [
   {
-    name: 'Student Final Project Portfolio',
-    description: 'Static website portfolio',
-    link: { href: 'scls-cs.com', label: 'GitHub Cards' },
-    tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
-  },
-  {
-    name: 'Seeking DNA',
-    description: '2022 SCLS Hackathon',
-    link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
-    tags: ['Hackathon', 'Java']
-  },
-  {
-    name: 'Texas Holdem Poker Judge',
-    description: '2024 SCLS Hackathon',
-    link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
-    tags: ['Hackathon']
-  },
-  {
-    name: 'AI Camp Course Development',
-    description: 'Developed a comprehensive AI curriculum for high school students, incorporating real-world projects and startup concepts.',
-    link: { href: 'https://scls-cs.gitbook.io/ai-camp', label: 'View Course' },
-    tags: ['Education', 'AI']
+    name: 'Personal Portfolio Website',
+    description:
+      'This site — built during AI Camp to learn web development, Git, and deployment.',
+    link: {
+      href: 'github.com/mingming0129/-',
+      label: 'GitHub',
+    },
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'AI Camp'],
   },
 ]
 
-// Hobbies & Volunteer
-export const activitiesHeadLine = "Hobbies & Volunteer"
-export const activitiesIntro = "Personal interests and community contributions."
+// Hobbies
+export const activitiesHeadLine = 'Life & Hobbies'
+export const activitiesIntro = 'What I do when I am not in class.'
 
 export const activities: Array<ActivityItemType> = [
   {
-    name: 'Python Workshop',
-    description:
-      'Teaching basic Python programming concepts to beginners. Covering variables, control flow, and functions.',
-    date: '2024-02-24',
-    location: 'Shanghai',
-    link: 'https://example.com/python-workshop',
+    name: 'Games',
+    description: 'Main: 金铲铲之战. Also play 王者荣耀, 无畏契约, 原神, and more.',
+    date: 'Main pick',
+    location: '金铲铲之战',
   },
   {
-    name: 'AI Ethics Discussion',
-    description:
-      'A group discussion about the ethical implications of AI development and its impact on society.',
-    date: '2024-03-01',
-    location: 'Shanghai',
-    link: 'https://example.com/ai-ethics',
+    name: 'Anime',
+    description: 'Fate series and Lucky Star (幸运星).',
+    date: 'Favorites',
+    location: 'Fate · 幸运星',
   },
   {
-    name: 'Code Review Session',
-    description:
-      'Helping students improve their coding skills through peer code review and best practices sharing.',
-    date: '2024-03-15',
-    location: 'Shanghai',
+    name: 'Music',
+    description: 'Usually on in the background while studying or gaming.',
+    date: 'On repeat',
+    location: '余佳运 · 徐佳莹 · 孙燕姿',
   },
 ]

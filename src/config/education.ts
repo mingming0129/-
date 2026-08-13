@@ -11,7 +11,7 @@ export type EducationItemType = {
 export const educationList: Array<EducationItemType> = [
   {
     school: 'Shanghai Soong Ching Ling School',
-    major: 'Student',
+    major: 'Grade 11',
     logo: 'college',
     start: '2023',
     end: 'Present',
