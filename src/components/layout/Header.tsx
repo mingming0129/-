@@ -13,7 +13,6 @@ import { navItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { GithubRepo } from '@/components/shared/GithubRepo'
 import { name } from '@/config/infoConfig'
-import { ui } from '@/config/ui'
 import { ChevronDownIcon, XIcon } from 'lucide-react'
 
 import TypingAnimation from "@/components/ui/typing-animation";
@@ -69,7 +68,7 @@ function MobileNavigation(
             className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl p-8 ring-1 ring-muted bg-card"
           >
             <div className="flex flex-row-reverse items-center justify-between">
-              <Popover.Button aria-label={ui.closeMenu} className="-m-1 p-1">
+              <Popover.Button aria-label="Close menu" className="-m-1 p-1">
                 <XIcon className="h-6 w-6 text-muted-foreground" />
               </Popover.Button>
               <h2 className="text-sm font-medium text-muted-foreground">
@@ -165,7 +164,7 @@ function AvatarContainer({
       {showName && (
         <Link
           href="/"
-          aria-label={ui.home}
+          aria-label="Home"
           className='pointer-events-auto'
         >
           <div className="text-md font-semibold capitalize">{name}</div>

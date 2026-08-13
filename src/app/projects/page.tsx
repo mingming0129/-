@@ -4,11 +4,10 @@ import { projectHeadLine, projectIntro, projects } from '@/config/infoConfig'
 import { activities, activitiesHeadLine, activitiesIntro } from '@/config/projects'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { ActivityCard } from '@/components/home/ActivityCard'
-import { ui } from '@/config/ui'
 import { Heart } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: ui.projectsPageTitle,
+  title: 'Projects',
   description: projectHeadLine,
 }
 

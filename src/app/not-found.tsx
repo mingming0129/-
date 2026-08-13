@@ -1,6 +1,5 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/layout/Container'
-import { ui } from '@/config/ui'
 
 export default function NotFound() {
   return (
@@ -10,13 +9,13 @@ export default function NotFound() {
           404
         </p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          {ui.pageNotFound}
+          Page not found
         </h1>
         <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
-          {ui.pageNotFoundDesc}
+          Sorry, we couldn&apos;t find the page you&apos;re looking for.
         </p>
         <Button href="/" variant="secondary" className="mt-4">
-          {ui.goBackHome}
+          Go back home
         </Button>
       </div>
     </Container>

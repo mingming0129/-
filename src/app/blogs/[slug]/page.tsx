@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation'
 import { getBlogBySlug } from '@/lib/blogs'
 import { getMDXContent } from '@/lib/mdx'
 import { BlogLayout } from '@/components/layout/BlogLayout'
-import { ui } from '@/config/ui'
 
 export const runtime = process.env.NEXT_RUNTIME === 'edge' ? 'edge' : 'nodejs'
 
@@ -18,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const blog = await getBlogBySlug(params.slug)
   if (!blog) {
     return {
-      title: ui.blogNotFound,
+      title: 'Blog not found',
     }
   }
 

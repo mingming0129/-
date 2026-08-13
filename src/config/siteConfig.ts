@@ -1,7 +1,6 @@
-import { ui } from './ui'
-
 // site config
 export const utm_source = 'mingming-portfolio'
+
 
 // navigation config
 type NavItemType = {
@@ -11,38 +10,38 @@ type NavItemType = {
 
 export const footerItems: Array<NavItemType> = [
   {
-    name: ui.nav.home,
+    name: 'Home',
     href: '/'
   },
   {
-    name: ui.nav.about,
+    name: 'About',
     href: '/about'
   },
   {
-    name: ui.nav.projects,
+    name: 'Projects',
     href: '/projects'
   },
   {
-    name: ui.nav.blogs,
+    name: 'Blogs',
     href: '/blogs'
   }
 ]
 
 export const navItems: Array<NavItemType> = [
   {
-    name: ui.nav.home,
+    name: 'Home',
     href: '/'
   },
   {
-    name: ui.nav.about,
+    name: 'About',
     href: '/about'
   },
   {
-    name: ui.nav.projects,
+    name: 'Projects',
     href: '/projects'
   },
   {
-    name: ui.nav.blogs,
+    name: 'Blogs',
     href: '/blogs'
   }
 ]

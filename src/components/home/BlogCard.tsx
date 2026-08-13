@@ -1,7 +1,6 @@
 import { Card } from '@/components/shared/Card'
 import { formatDate } from '@/lib/formatDate'
 import { type BlogType } from '@/lib/blogs'
-import { ui } from '@/config/ui'
 
 export function BlogCard({ blog, titleAs }: { blog: BlogType, titleAs?: keyof JSX.IntrinsicElements }) {
   const as = titleAs ?? 'h2'
@@ -14,7 +13,7 @@ export function BlogCard({ blog, titleAs }: { blog: BlogType, titleAs?: keyof JS
         {formatDate(blog.date)}
       </Card.Eyebrow>
       <Card.Description>{blog.description}</Card.Description>
-      <Card.Cta>{ui.readBlog}</Card.Cta>
+      <Card.Cta>Read blog</Card.Cta>
     </Card>
   )
 }

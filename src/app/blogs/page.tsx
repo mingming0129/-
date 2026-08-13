@@ -5,7 +5,6 @@ import { SimpleLayout } from '@/components/layout/SimpleLayout'
 import { type BlogType, getAllBlogs } from '@/lib/blogs'
 import { formatDate } from '@/lib/formatDate'
 import { blogHeadLine, blogIntro } from '@/config/infoConfig'
-import { ui } from '@/config/ui'
 
 export const runtime = process.env.NEXT_RUNTIME === 'edge' ? 'edge' : 'nodejs'
 
@@ -25,7 +24,7 @@ function Blog({ blog }: { blog: BlogType }) {
           {formatDate(blog.date)}
         </Card.Eyebrow>
         <Card.Description>{blog.description}</Card.Description>
-        <Card.Cta>{ui.readBlog}</Card.Cta>
+        <Card.Cta>Read blog</Card.Cta>
       </Card>
       <Card.Eyebrow
         as="time"
@@ -39,7 +38,7 @@ function Blog({ blog }: { blog: BlogType }) {
 }
 
 export const metadata: Metadata = {
-  title: ui.blogsPageTitle,
+  title: 'Blogs',
   description:
     blogIntro
 }
