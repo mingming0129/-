@@ -3,19 +3,19 @@ export * from './education'
 export * from './career'
 
 // personal info
-export const name = 'Derek Hu'
-export const headline = 'Teacher at Shanghai Soong Ching Ling School.'
+export const name = 'Ming ming Ge'
+export const headline = 'Student at Shanghai Soong Ching Ling School.'
 export const introduction =
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020."
-export const email = 'tong.hu@scls-sh.org'
-export const githubUsername = 'derekhut'
+  "Hi! My name is Ming ming Ge. I'm a student at Shanghai Soong Ching Ling School, exploring computer science and building projects through AI Camp."
+export const email = 'mingming.ge@scls-sh.org'
+export const githubUsername = 'mingming0129'
 
 // about page
 export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
 export const aboutParagraphs = [
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020.",
-  'Currently I am working on a new course called AI Camp, an innovative course where high school students create real-world products and startups while exploring the frontiers of AI.',
-  "I started this blog to share the insights I learn every day. Most blogs focus on education in Artificial Intelligence and general computer science, while others share the life lessons I've learned.",
+  "Hi! My name is Ming ming Ge. I'm a student at Shanghai Soong Ching Ling School with a passion for technology and creative problem solving.",
+  'Through AI Camp, I am learning web development, Git workflows, and how to turn ideas into real-world projects.',
+  "I use this site to share what I'm learning about AI, programming, and my journey as a student.",
 ]
 
 // blog
