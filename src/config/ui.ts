@@ -1,0 +1,23 @@
+export const ui = {
+  nav: {
+    home: '首页',
+    about: '关于',
+    projects: '项目',
+    blogs: '博客',
+  },
+  career: '经历',
+  education: '教育',
+  readBlog: '阅读博客',
+  goBackHome: '返回首页',
+  pageNotFound: '页面未找到',
+  pageNotFoundDesc: '抱歉，找不到您要访问的页面。',
+  allRightsReserved: '保留所有权利',
+  followOn: '关注',
+  home: '首页',
+  goBackToBlogs: '返回博客列表',
+  closeMenu: '关闭菜单',
+  aboutPageTitle: '关于',
+  projectsPageTitle: '项目',
+  blogsPageTitle: '博客',
+  blogNotFound: '文章未找到',
+}

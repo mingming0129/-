@@ -4,6 +4,7 @@
 import { Briefcase } from '@phosphor-icons/react'
 import { CareerItemType, careerList } from '@/config/infoConfig'
 import { CustomIcon} from '@/components/shared/CustomIcon'
+import { ui } from '@/config/ui'
 
 
 
@@ -40,7 +41,7 @@ export default function Career() {
     <div className="rounded-2xl border border-muted shadow-sm p-6">
       <h2 className="flex text-sm font-semibold">
         <Briefcase size={24} weight="duotone" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">{ui.career}</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {careerList.map((careerItem, careerItemIndex) => (

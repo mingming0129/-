@@ -3,13 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { aboutMeHeadline, aboutParagraphs, name, introduction } from '@/config/infoConfig'
+import { ui } from '@/config/ui'
 import { Container } from '@/components/layout/Container'
 
 import portraitImage from '@/images/portrait.jpg'
 import SocialLinks from '@/components/about/SocialLinks'
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: ui.aboutPageTitle,
   description: `${name} - ${introduction}`,
 }
 
