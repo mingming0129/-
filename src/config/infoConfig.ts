@@ -1,71 +1,62 @@
 export * from './projects'
 export * from './education'
 export * from './career'
+export * from './hobbies'
+export * from './learning'
 
 // personal info
 export const name = 'Ming ming Ge'
-export const headline = 'Student at Shanghai Soong Ching Ling School.'
+export const headline = 'Grade 11 student at Shanghai Soong Ching Ling School.'
 export const introduction =
-  "Hi! My name is Ming ming Ge. I'm a student at Shanghai Soong Ching Ling School, exploring computer science and building projects through AI Camp."
-export const email = 'mingming.ge@scls-sh.org'
+  "I'm a regular high school student who likes games, anime, and music — and I'm learning computer science through CSA and CSP."
+export const email = ''
+export const showEmail = false
 export const githubUsername = 'mingming0129'
 
 // about page
-export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
+export const aboutMeHeadline = 'About Me'
 export const aboutParagraphs = [
-  "Hi! My name is Ming ming Ge. I'm a student at Shanghai Soong Ching Ling School with a passion for technology and creative problem solving.",
-  'Through AI Camp, I am learning web development, Git workflows, and how to turn ideas into real-world projects.',
-  "I use this site to share what I'm learning about AI, programming, and my journey as a student.",
+  "I'm in Grade 11 at Shanghai Soong Ching Ling School. I'm not trying to look like a prodigy on this site — just a normal student who's curious about programming.",
+  "This semester I'm taking CSA and CSP. Next semester I'll add ES, Statistics, Chemistry, and Calculus.",
+  'Outside of class, you will usually find me playing games (especially 金铲铲之战), watching anime like Fate and Lucky Star, or listening to 余佳运, 徐佳莹, and 孙燕姿.',
 ]
 
 // blog
-export const blogHeadLine = "What I've thinking about."
+export const blogHeadLine = 'Notes & Thoughts'
 export const blogIntro =
-  "I've written something about AI, programming and life."
+  "I haven't written much here yet — maybe someday."
 
 // social links
 export type SocialLinkType = {
   name: string
   ariaLabel?: string
   icon: string
-  href: string
+  href?: string
+  handle?: string
 }
 
 export const socialLinks: Array<SocialLinkType> = [
   {
-    name: 'Tiktok',
-    icon: 'tiktok',
-    href: 'https://www.tiktok.com/@harvard?lang=en',
+    name: 'WeChat',
+    icon: 'wechat',
+    handle: 'mingming100129',
   },
   {
     name: 'Bilibili',
     icon: 'bilibili',
-    href: 'https://space.bilibili.com/349721082',
+    href: 'https://search.bilibili.com/all?keyword=minnineTvT',
+    handle: 'minnineTvT',
   },
 ]
 
 // https://simpleicons.org/
 export const techIcons = [
-  'typescript',
-  'javascript',
-  'supabase',
-  'cloudflare',
   'java',
-  'oracle',
-  'mysql',
+  'javascript',
+  'typescript',
   'react',
-  'nodedotjs',
   'nextdotjs',
-  'prisma',
-  'postgresql',
-  'nginx',
-  'vercel',
-  'docker',
   'git',
   'github',
   'visualstudiocode',
-  'androidstudio',
-  'ios',
-  'apple',
-  'wechat',
 ]

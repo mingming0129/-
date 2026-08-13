@@ -1,5 +1,4 @@
 import { Container } from '@/components/layout/Container'
-import Newsletter from '@/components/home/Newsletter'
 import Career from '@/components/home/Career'
 import Education from '@/components/home/Education'
 import SocialLinks from '@/components/home/SocialLinks'
@@ -7,11 +6,21 @@ import { headline, introduction } from '@/config/infoConfig'
 import { BlogCard } from '@/components/home/BlogCard'
 import { getAllBlogs, type BlogType } from '@/lib/blogs'
 import { ProjectCard } from '@/components/project/ProjectCard'
-import { ActivityCard } from '@/components/home/ActivityCard'
-import { projectHeadLine, projectIntro, projects, blogHeadLine, blogIntro, techIcons } from '@/config/infoConfig'
-import { awards, awardsHeadLine, awardsIntro, activities, activitiesHeadLine, activitiesIntro } from '@/config/projects'
-import IconCloud from "@/components/ui/icon-cloud"
-import { Award, Briefcase, Heart } from 'lucide-react'
+import {
+  projectHeadLine,
+  projectIntro,
+  projects,
+  blogHeadLine,
+  blogIntro,
+  techIcons,
+  hobbiesHeadLine,
+  hobbiesIntro,
+  hobbies,
+} from '@/config/infoConfig'
+import IconCloud from '@/components/ui/icon-cloud'
+import { LearningSection } from '@/components/home/LearningSection'
+import { HobbyCard } from '@/components/home/HobbyCard'
+import { Briefcase, Heart } from 'lucide-react'
 
 export default async function Home() {
   let blogList = (await getAllBlogs()).slice(0, 4)
@@ -35,23 +44,9 @@ export default async function Home() {
           </div>
         </div>
 
-        {/* Awards */}
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            <Award size={28}/>
-            {awardsHeadLine}
-          </h2>
-          <ul
-            role="list"
-            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
-          >
-            {awards.map((award) => (
-              <ActivityCard key={award.name} activity={award} titleAs='h3'/>
-            ))}
-          </ul>
-        </div>
+        <LearningSection />
 
-        {/* Research & Projects */}
+        {/* Projects */}
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
             <Briefcase size={28}/>
@@ -70,21 +65,21 @@ export default async function Home() {
           </ul>
         </div>
 
-        {/* Hobbies & Volunteer */}
+        {/* Life & Hobbies */}
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
             <Heart size={28}/>
-            {activitiesHeadLine}
+            {hobbiesHeadLine}
           </h2>
           <p className="text-base text-muted-foreground max-w-2xl mb-8">
-            {activitiesIntro}
+            {hobbiesIntro}
           </p>
           <ul
             role="list"
-            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
+            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
           >
-            {activities.map((activity) => (
-              <ActivityCard key={activity.name} activity={activity} titleAs='h3'/>
+            {hobbies.map((hobby) => (
+              <HobbyCard key={hobby.name} hobby={hobby} titleAs='h3'/>
             ))}
           </ul>
         </div>
@@ -99,15 +94,12 @@ export default async function Home() {
           </p>
         </div>
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/* left column */}
-          {/* blog */}
           <div className="flex flex-col gap-16">
             {blogList.map((blog: BlogType) => (
               <BlogCard key={blog.slug} blog={blog} titleAs='h3'/>
             ))}
           </div>
 
-          {/* right column */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Career />
             <Education />
